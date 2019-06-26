@@ -1,0 +1,782 @@
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 25/06/2019 23:52:15
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 00:15:26
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 18 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 00:24:28
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 00:29:30
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 00:47:21
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 01:05:48
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 03:19:43
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 03:31:00
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Client sender, ulong eventNameHash, object[] arguments)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Client sender, ulong eventNameHash, object[] arguments)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Client sender, ulong eventNameHash, object[] arguments)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Client sender, ulong eventNameHash, object[] arguments)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Client sender, ulong eventNameHash, object[] arguments)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Client sender, ulong eventNameHash, object[] arguments)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Client sender, ulong eventNameHash, object[] arguments)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Client sender, ulong eventNameHash, object[] arguments)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Client sender, ulong eventNameHash, object[] arguments)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Client sender, ulong eventNameHash, object[] arguments)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Client sender, ulong eventNameHash, object[] arguments)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Client sender, ulong eventNameHash, object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Client sender, ulong eventNameHash, object[] arguments)
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 03:42:13
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 03:56:56
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 04:00:34
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 04:02:54
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 05:04:43
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..
+Initializing Bootstrapper.dll (0.3.7.0)..
+-> SERVER STARTED AT 26/06/2019 05:12:02
+Loaded 451 entries from vehicleData.json
+Loading resources..
+-> Starting reallife resource..
+reallife: loading scripts.. found 1 script(s)
+reallife: instantiating reallife.Main..
+reallife: instantiating reallife.Hotkey.HotkeyE..
+reallife: instantiating reallife.Fraktion.LSPD..
+reallife: instantiating reallife.Fraktion.SARU..
+reallife: instantiating reallife.Fahrzeughändler.Mosley..
+reallife: instantiating reallife.Events.LoginRegisterEvent..
+reallife: instantiating reallife.Events.SE..
+reallife: instantiating reallife.Commands.AdminCmds..
+reallife: instantiating reallife.Commands.FraktionCmds..
+reallife: instantiating reallife.Commands.LeaderCmds..
+reallife: instantiating reallife.Commands.LSPDCmds..
+reallife: instantiating reallife.Commands.PlayerMoney..
+reallife: instantiating reallife.Commands.SARUCmds..
+reallife: instantiating reallife.Commands.UserCmds..
+reallife: instantiating reallife.Chat.Chat..
+reallife: instantiating reallife.Blips.AllgemeineBlips..
+reallife: instantiating reallife.Blips.AtmBlips..
+reallife: instantiating reallife.Blips.BankBlips..
+reallife: instantiating reallife.Blips.FrakBlips..
+reallife: instantiating reallife.Blips.KrankenhausBlips..
+reallife: instantiating reallife.Blips.RentCar..
+reallife: instantiating reallife.Bank.TriggerBank..
+reallife: loading server events.. found 3 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loading server events.. found 2 server event(s)
+reallife: loading server events.. found 1 server event(s)
+reallife: loaded 8 server events(s)
+reallife: loading commands.. found 23 command(s)
+reallife: loading commands.. found 2 command(s)
+reallife: loading commands.. found 4 command(s)
+reallife: loading commands.. found 10 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 3 command(s)
+reallife: loading commands.. found 13 command(s)
+reallife: loaded 58 commands(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loading remote events.. found 2 remote event(s)
+reallife: loading remote events.. found 3 remote event(s)
+reallife: loading remote events.. found 7 remote event(s)
+reallife: loaded 19 remote event(s)
+-> Resource reallife started!
+Started! Waiting for connections..

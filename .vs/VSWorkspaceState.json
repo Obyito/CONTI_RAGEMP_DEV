@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bridge",
+    "\\bridge\\resources",
+    "\\bridge\\resources\\reallife",
+    "\\bridge\\resources\\reallife\\Blips",
+    "\\client_packages",
+    "\\client_packages\\cs_packages",
+    "\\client_packages\\cs_packages\\Main",
+    "\\client_packages\\Reallife",
+    "\\client_packages\\Reallife\\Autohaus",
+    "\\client_packages\\Reallife\\Autohaus\\Rentcar"
+  ],
+  "SelectedNode": "\\bridge\\resources\\resources.sln",
+  "PreviewInSolutionExplorer": false
+}

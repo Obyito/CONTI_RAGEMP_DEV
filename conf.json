@@ -1,0 +1,9 @@
+{
+	"maxplayers" : 1,
+	"name" : "Continental Five | Dev Server [0.1.1]", 
+	"gamemode" : "reallife", 
+	"stream-distance" : 500.0,
+	"announce" : false,
+	"csharp" : "true",
+	"port": 22005
+}

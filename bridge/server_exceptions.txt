@@ -1,0 +1,186 @@
+
+==================[26/06/2019 01:08:54]==================
+System.ArgumentNullException: Value cannot be null.
+Parameter name: document
+   at bool LiteDB.LiteCollection<T>.Update(T document)
+=========================================================
+
+==================[26/06/2019 01:08:54]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentNullException: Value cannot be null.
+Parameter name: document
+   at bool LiteDB.LiteCollection<T>.Update(T document)
+   at bool reallife.Db.Database.Update<T>(T data) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 40
+   at void reallife.Player.Handler.DisconnectFinish(Client client) in C:\RAGEMP\server-files\bridge\resources\reallife\Player\Handler.cs:line 98
+   at void reallife.Events.SE.OnPlayerDisconnected(Client client, DisconnectionType type, string reason) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\SE.cs:line 13
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26/06/2019 03:33:51]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+=========================================================
+
+==================[26/06/2019 03:33:51]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26/06/2019 03:33:52]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+=========================================================
+
+==================[26/06/2019 03:33:52]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26/06/2019 03:33:52]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+=========================================================
+
+==================[26/06/2019 03:33:52]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26/06/2019 03:33:53]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+=========================================================
+
+==================[26/06/2019 03:33:53]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26/06/2019 03:33:53]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+=========================================================
+
+==================[26/06/2019 03:33:53]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26/06/2019 03:33:53]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+=========================================================
+
+==================[26/06/2019 03:33:53]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26/06/2019 03:33:58]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+=========================================================
+
+==================[26/06/2019 03:33:58]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26/06/2019 03:35:41]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+=========================================================
+
+==================[26/06/2019 03:35:41]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26/06/2019 03:35:41]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+=========================================================
+
+==================[26/06/2019 03:35:41]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26/06/2019 03:37:30]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+=========================================================
+
+==================[26/06/2019 03:37:30]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26/06/2019 03:37:31]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+=========================================================
+
+==================[26/06/2019 03:37:31]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[26/06/2019 03:37:31]==================
+System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+=========================================================
+
+==================[26/06/2019 03:37:31]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NotImplementedException: The method or operation is not implemented.
+   at object reallife.Db.Database.GetData<T>(string v1, string vorname, string v2, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Db\Database.cs:line 46
+   at void reallife.Events.LoginRegisterEvent.OnPlayerCharacterAttempt(Client client, string vorname, string nachname) in C:\RAGEMP\server-files\bridge\resources\reallife\Events\LoginRegisterEvent.cs:line 16
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
