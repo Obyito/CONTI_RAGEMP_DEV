@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nick\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Hugo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projekte\\Reallife-V\\server-files\\bridge\\resources\\reallife\\reallife.csproj",
+      "projectUniqueName": "C:\\RAGEMP\\server-files\\bridge\\resources\\reallife\\reallife.csproj",
       "projectName": "reallife",
-      "projectPath": "D:\\Projekte\\Reallife-V\\server-files\\bridge\\resources\\reallife\\reallife.csproj",
-      "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
-      "outputPath": "D:\\Projekte\\Reallife-V\\server-files\\bridge\\resources\\reallife\\obj\\",
+      "projectPath": "C:\\RAGEMP\\server-files\\bridge\\resources\\reallife\\reallife.csproj",
+      "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
+      "outputPath": "C:\\RAGEMP\\server-files\\bridge\\resources\\reallife\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Nick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

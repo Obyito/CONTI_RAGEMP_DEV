@@ -35,7 +35,7 @@ namespace reallife.Player
 
             if (playerInfo.cuff == 1)
             {
-                client.SendNotification("~r~Du hast Offlineflucht begangen und sitzt nun 5 Minuten länger im Gefängnis!");
+                client.SendNotification("~r~Suite à l'évasion tentée, vous recevez 5 minutes de prison supplémentaires.");
                 playerInfo.jailtime += 300000;
                 playerInfo.cuff = 0;
                 playerInfo.jail = 1;

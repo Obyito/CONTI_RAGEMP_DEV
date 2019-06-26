@@ -24,7 +24,7 @@ namespace reallife.Chat
                 if (!clients[i].Exists)
                     continue;
 
-                clients[i].SendChatMessage($"{client.Name} sagt: {message}");
+                clients[i].SendChatMessage($"{client.Name} dit : {message}");
             }
         }
     }

@@ -18,13 +18,13 @@ namespace reallife.Commands
 
             if (pInfo.jail == 0)
             {
-                client.SendNotification("Du sitzt nicht im Gefängnis!");
+                client.SendNotification("Vous n'êtes pas en prison");
                 return;
             }
 
             TimeSpan ts = TimeSpan.FromMilliseconds(pInfo.jailtime);
 
-            client.SendNotification($"[~b~LSPD~w~]: Du sitzt für ~r~{ts.Minutes}~w~ Minuten.");
+            client.SendNotification($"[~b~LSPD~w~]:Vous êtes ici depuis ~r~{ts.Minutes}~w~ minutes.");
         }
 
         [Command("showstats")]
@@ -35,23 +35,23 @@ namespace reallife.Commands
 
             if (client.Position.DistanceTo2D(client.Position) < 3)
             {
-                player.SendNotification($"~b~Vorname:~w~ {cInfo.vorname}");
-                player.SendNotification($"~b~Nachname:~w~ {cInfo.nachname}");
+                player.SendNotification($"~b~Prénom~w~ {cInfo.vorname}");
+                player.SendNotification($"~b~Nom~w~ {cInfo.nachname}");
                 //FRAKTIONABFRAGE
-                player.SendNotification($"~b~Fraktion:~w~ {PlayerInfo.WhichFrak(client)}");
+                player.SendNotification($"~b~Groupe:~w~ {PlayerInfo.WhichFrak(client)}");
                 //ADMINABFRAGE
-                    player.SendNotification($"~b~Rolle:~w~ {PlayerInfo.WhichADMIN(client)}");
+                    player.SendNotification($"~b~Métier:~w~ {PlayerInfo.WhichADMIN(client)}");
                 //WANTEDABFRAGE
                 if (pInfo.fraktion == 1)
                 {
                     if (cInfo.wantedlevel >= 1)
                     {
-                        player.SendNotification("~r~Spieler wird gesucht!");
+                        player.SendNotification("~r~Cette personne est recherchée!");
                     }
                 }
             } else
             {
-                client.SendNotification("Spieler nicht in Reichweite!");
+                client.SendNotification("La personne n'est pas à côté de vous");
                 return;
             }
         }
@@ -62,7 +62,7 @@ namespace reallife.Commands
             PlayerInfo pInfo = PlayerHelper.GetPlayerStats(client);
 
             pInfo.last_location = new double[] { client.Position.X, client.Position.Y, client.Position.Z };
-            client.SendNotification("~g~Position erfolgreich gespeichert!");
+            client.SendNotification("~g~Position sauvegardée");
             pInfo.Update();
         }
 

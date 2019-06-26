@@ -17,3 +17,9 @@ mp.events.add("RentVehicleClose", () => {
 	rentBrowser.destroy();
     mp.gui.cursor.show(false, false);
 });
+
+mp.events.add('RentRollerToClient2', () => {
+    mp.events.callRemote('RentSpawnCarRoller2');
+	rentBrowser.destroy();
+    mp.gui.cursor.show(false, false);
+});

@@ -132,8 +132,8 @@ namespace reallife.Hotkey
 
             if (client.HasData("RentVehicle"))
             {
-                client.SendNotification("~y~Du besitzt bereits einen Mietvertrag!");
-                client.SendChatMessage("~r~Mietfahrzeug:~w~ Nutze /unrent um deinen Mietvertrag zu kündigen!");
+                client.SendNotification("~y~Vous avez déjà loué un véhicule !");
+                client.SendChatMessage("~r~Avertissement:~w~ Faite /unrent pour résilier la location !");
                 return;
             }
 
@@ -144,15 +144,47 @@ namespace reallife.Hotkey
             client.SetIntoVehicle(veh, -1);
             veh.Locked = true;
 
-            client.SendChatMessage("~r~Mietfahrzeug:~w~ /lock - Abschliessen & Aufschliessen.");
-            client.SendChatMessage("~r~Mietfahrzeug:~w~/motor - Motor starten/abschalten.");
+            client.SendChatMessage("~r~Avertissement:~w~ /lock - Pour bloquer/débloquer votre véhicule");
+            client.SendChatMessage("~r~Avertissement:~w~/motor - Pour démarrer le moteur");
 
             pInfo.SubMoney(150);
             Database.Update(pInfo);
 
             EventTriggers.Update_Money(client);
 
-            client.SendNotification("Du hast ~g~150$~w~ für dein Mietfahrzeug gezahlt.");
+            client.SendNotification("Vous avez payez ~g~150$~w~ pour la location.");
+
+            client.SetData("RentVehicle", veh);
+            isMenuOpen = false;
+        }
+        [RemoteEvent("RentSpawnCarRoller2")]
+        public void RentSpawnCarRoller2(Client client)
+        {
+            PlayerInfo pInfo = PlayerHelper.GetPlayerStats(client);
+
+            if (client.HasData("RentVehicle"))
+            {
+                client.SendNotification("~y~Vous avez déjà loué un véhicule !");
+                client.SendChatMessage("~r~Avertissement:~w~ Faite /unrent pour résilier la location !");
+                return;
+            }
+
+            uint rveh = NAPI.Util.GetHashKey("blista2");
+
+            Vehicle veh = NAPI.Vehicle.CreateVehicle(rveh, new Vector3(-1151.06201171875, -716.578186035156, 20.6585292816162), 311.515930175781f, 0, 0);
+            NAPI.Vehicle.SetVehicleNumberPlate(veh, client.Name);
+            client.SetIntoVehicle(veh, -1);
+            veh.Locked = true;
+
+            client.SendChatMessage("~r~Avertissement::~w~ /lock - Pour bloquer/débloquer votre véhicule");
+            client.SendChatMessage("~r~Avertissement:~w~ /motor - Pour démarrer le moteur");
+
+            pInfo.SubMoney(150);
+            Database.Update(pInfo);
+
+            EventTriggers.Update_Money(client);
+
+            client.SendNotification("Vous avez payez ~g~150$~w~ pour la location.");
 
             client.SetData("RentVehicle", veh);
             isMenuOpen = false;

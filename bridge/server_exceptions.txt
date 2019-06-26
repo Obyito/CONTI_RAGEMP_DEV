@@ -184,3 +184,18 @@ System.Reflection.TargetInvocationException: Exception has been thrown by the ta
    at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
    at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
 =========================================================
+
+==================[26/06/2019 11:42:20]==================
+System.FormatException: Input string was not in a correct format.
+   at void Number.StringToNumber(ReadOnlySpan<char> str, NumberStyles options, ref NumberBuffer number, NumberFormatInfo info, bool parseDecimal)
+=========================================================
+
+==================[26/06/2019 11:42:24]==================
+System.FormatException: Input string was not in a correct format.
+   at void Number.StringToNumber(ReadOnlySpan<char> str, NumberStyles options, ref NumberBuffer number, NumberFormatInfo info, bool parseDecimal)
+=========================================================
+
+==================[26/06/2019 11:42:24]==================
+System.FormatException: Input string was not in a correct format.
+   at void Number.StringToNumber(ReadOnlySpan<char> str, NumberStyles options, ref NumberBuffer number, NumberFormatInfo info, bool parseDecimal)
+=========================================================

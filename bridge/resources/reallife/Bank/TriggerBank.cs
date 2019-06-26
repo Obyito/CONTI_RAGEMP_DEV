@@ -10,7 +10,7 @@ namespace reallife.Bank
 {
     public class TriggerBank : Script
     {
-  //-------------------[Bankkonto Change Pin]-------------------//
+        //-------------------[Bankkonto Change Pin]-------------------//
         [RemoteEvent("test")]
         public void test(Client client, int handgeld)
         {
@@ -22,46 +22,46 @@ namespace reallife.Bank
         {
             PlayerInfo pInfo = PlayerHelper.GetPlayerStats(client);
 
-            if(pInfo.bkontopin != opin)
+            if (pInfo.bkontopin != opin)
             {
-                client.SendChatMessage("[~g~Bank~w~] Dein Alter Pin stimmt nicht!");
+                client.SendChatMessage("[~g~Bank~w~] Le code pin est faux");
                 client.TriggerEvent("bChangepinResult", 0);
                 return;
             }
-            else if(npin != npinre)
+            else if (npin != npinre)
             {
-                client.SendChatMessage("[~g~Bank~w~] Dein Neuer Pin stimmt nicht über ein!");
+                client.SendChatMessage("[~g~Bank~w~] Le nouveau code pin ne correspond pas !");
                 client.TriggerEvent("bChangepinResult");
                 return;
             }
             else
             {
-                client.SendChatMessage($"[~g~Bank~w~] Du hast dein Pin erfolgreich geändert zu {npin}");
+                client.SendChatMessage($"[~g~Bank~w~] Vous avez changez votre code pin avec succès {npin}");
                 pInfo.bkontopin = npin;
                 client.TriggerEvent("bChangepinResult", 1);
                 Database.Update(pInfo);
             }
         }
-//-------------------[Bankkonto Login]-------------------//
+        //-------------------[Bankkonto Login]-------------------//
         [RemoteEvent("OnplayerbKontoLogin")]
         public void OnplayerbKontoLogin(Client client, int pin)
         {
             PlayerInfo pInfo = PlayerHelper.GetPlayerStats(client);
 
-            if(pInfo.bkontopin != pin)
+            if (pInfo.bkontopin != pin)
             {
-                client.SendChatMessage("[~g~Bank~w~] Falscher Pin, bitte gib in erneut ein!");
+                client.SendChatMessage("[~g~Bank~w~] Mauvais code, veuillez réessayez");
                 client.TriggerEvent("bKontoLoginResult", 0);
                 return;
             }
             else
             {
-                client.SendChatMessage("[~g~Bank~w~] Du hast dich erfolgreich eingeloggt!");
+                client.SendChatMessage("[~g~Bank~w~] Vous vous êtes connecté avec succès!");
                 NAPI.ClientEvent.TriggerClientEvent(client, "StartBankBrowser");
                 client.TriggerEvent("bKontoLoginResult", 1);
             }
         }
-//-------------------[Bankkonto Erstellung]-------------------//
+        //-------------------[Bankkonto Erstellung]-------------------//
         [RemoteEvent("OnPlayerbKonto")]
         public void OnPlayerbKonto(Client client, int pin, int repin)
         {
@@ -69,14 +69,14 @@ namespace reallife.Bank
 
             if (pin != repin)
             {
-                client.SendChatMessage("Dein Pin stimmt nicht überein!");
+                client.SendChatMessage("Votre code pin est faux");
                 client.TriggerEvent("bKontoResult", 0);
                 return;
             }
             else
             {
-                client.SendChatMessage($"[~g~Bank~w~] Dein Pin lautet {pin}");
-                client.SendChatMessage($"[~g~Bank~w~] Du kannst deinen Pin jederzeit in einer Bank ändern!");
+                client.SendChatMessage($"[~g~Bank~w~] Votre pin est {pin}");
+                client.SendChatMessage($"[~g~Bank~w~] Vous pouvez toujours changer votre PIN dans une banque!");
                 pInfo.bkontopin += pin;
                 pInfo.bkonto += 1;
 
@@ -84,7 +84,7 @@ namespace reallife.Bank
                 Database.Update(pInfo);
             }
         }
-//-------------------[Bankkonto Einzahlung/Auszahlung/Überweisung]-------------------//
+        //-------------------[Bankkonto Einzahlung/Auszahlung/Überweisung]-------------------//
         [RemoteEvent("OnPlayerUberweisungAttempt")]
         public void OnPlayerUberweisungAttempt(Client client, string name, int summe)
         {
@@ -106,35 +106,35 @@ namespace reallife.Bank
                 return;
             }*/
 
-            if(spielername == null)
+            if (spielername == null)
             {
-                client.SendChatMessage("[~g~BANK~w~] Diese Person existiert nicht!");
+                client.SendChatMessage("[~g~BANK~w~] Cette personne n'existe pas");
                 client.TriggerEvent("BankResult", 0);
                 return;
             }
 
             if (summe <= 0)
             {
-                client.SendChatMessage("[~g~BANK~w~] Dein Betrag ist zu klein!");
+                client.SendChatMessage("[~g~BANK~w~] Votre montant est trop petit!");
                 client.TriggerEvent("BankResult", 0);
                 return;
             }
-            else if(playerInfo.bank < summe)
+            else if (playerInfo.bank < summe)
             {
-                client.SendChatMessage("[~g~BANK~w~] Dein Guthaben reicht nicht aus!");
+                client.SendChatMessage("[~g~BANK~w~] Votre crédit ne suffit pas!");
                 client.TriggerEvent("BankResult", 0);
                 return;
             }
-            if(client.Name == player.Name)
+            if (client.Name == player.Name)
             {
-                client.SendChatMessage($"[~g~BANK~w~] Du kannst dir nicht selber Geld Überweisen!");
+                client.SendChatMessage($"[~g~BANK~w~] Vous ne pouvez pas transférer de l'argent vous-même!");
                 client.TriggerEvent("BankResult", 0);
                 return;
             }
             else
             {
-                client.SendChatMessage($"[~g~BANK~w~] Du hast {otherInfo.vorname}{otherInfo.nachname} ~g~{summe}$~w~ überwiesen!");
-                player.SendChatMessage($"[~g~BANK~w~] {playerInfo.vorname}{playerInfo.nachname} hat dir ~g~{summe}$~w~ überwiesen.");
+                client.SendChatMessage($"[~g~BANK~w~] Tu as payé  ~g~{summe}$~w~ à {otherInfo.vorname}{otherInfo.nachname} ");
+                player.SendChatMessage($"[~g~BANK~w~]  {playerInfo.vorname}{playerInfo.nachname} t'as payé ~g~{summe}$~w~ ");
 
                 playerInfo.bank -= summe;
                 otherInfo.bank += summe;
@@ -153,7 +153,7 @@ namespace reallife.Bank
 
             if (pInfo.bank < summe)
             {
-                client.SendChatMessage("~r~Du hast nicht genung Geld auf der Bank!");
+                client.SendChatMessage("~r~Vous n'avez pas assez d'argent à la banque!");
                 client.TriggerEvent("BankResult", 0);
                 return;
             }
@@ -161,8 +161,8 @@ namespace reallife.Bank
             {
                 pInfo.bank -= summe;
                 pInfo.money += summe;
-                client.SendChatMessage($"~w~Du hast ~g~${summe} ~w~von deinem Konto abgehoben");
-                client.SendChatMessage($"~w~Neuer Kontostand: ~g~${pInfo.bank}~w~ | Bargeld: ~g~${pInfo.money}");
+                client.SendChatMessage($"~w~Tu as~g~${summe} ~w~suite à la levé de votre compte");
+                client.SendChatMessage($"~w~Nouveau solde du compte  ~g~${pInfo.bank}~w~ | trésorerie:: ~g~${pInfo.money}");
                 client.TriggerEvent("BankResult", 1);
                 Database.Upsert(pInfo);
 
@@ -177,7 +177,7 @@ namespace reallife.Bank
 
             if (pInfo.money < summe)
             {
-                client.SendChatMessage("~r~Du hast nicht genung Bargeld!");
+                client.SendChatMessage("~r~Vous n'avez pas assez d'argent!");
                 client.TriggerEvent("BankResult", 0);
                 return;
             }
@@ -185,8 +185,8 @@ namespace reallife.Bank
             {
                 pInfo.money -= summe;
                 pInfo.bank += summe;
-                client.SendChatMessage($"~w~Du hast ~g~${summe} ~w~auf dein Konto eingezahlt!");
-                client.SendChatMessage($"~w~Neuer Kontostand: ~g~${pInfo.bank}~w~ | Bargeld: ~g~${pInfo.money}");
+                client.SendChatMessage($"~w~Vous avez déposé ~g~${summe} ~w~sur votre compte");
+                client.SendChatMessage($"~w~Nouveau solde du compte ~g~${pInfo.bank}~w~ | trésorerie: ~g~${pInfo.money}");
                 client.TriggerEvent("BankResult", 1);
                 Database.Upsert(pInfo);
 

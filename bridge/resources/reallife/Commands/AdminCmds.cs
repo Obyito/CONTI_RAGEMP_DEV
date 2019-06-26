@@ -19,26 +19,26 @@ namespace reallife.Commands
             //Abfrage ob man ein Leader ist
             if (!AdminSystem.HasRank(client, 1))
             {
-                client.SendNotification("~r~Du bist kein Admin!");
+                client.SendNotification("~rTu n'es pas Admin.");
                 return;
             }
 
             if (client.Name == player.Name)
             {
-                client.SendNotification("~r~Du kannst dich nicht selber angeben!");
+                client.SendNotification("~r~Vous ne pouvez pas vous spécifier vous même");
                 return;
             }
 
             if (playerInfo.warn == 0)
             {
-                player.SendNotification("Spieler besitzt keine Warn's!");
+                player.SendNotification("Le joueur n'a pas d'avertissement");
                 return;
             }
 
             playerInfo.warn -= 1;
             playerInfo.Update();
 
-            player.SendChatMessage($"[~r~Server~w~]: Eine Verwarnung wurde entfernt! du besitzt nun {playerInfo.warn} Verwarnungen.");
+            player.SendChatMessage($"[~r~Server~w~]: un avertissement à été suppriméx. Il possède maintenant {playerInfo.warn} avertissement(s).");
         }
 
         [Command("warn")]
@@ -52,24 +52,24 @@ namespace reallife.Commands
             //Abfrage ob man ein Leader ist
             if (!AdminSystem.HasRank(client, 1))
             {
-                client.SendNotification("~r~Du bist kein Admin!");
+                client.SendNotification("~r~Tu n'es pas Admin");
                 return;
             }
 
             if (client.Name == player.Name)
             {
-                client.SendNotification("~r~Du kannst dich nicht selber angeben!");
+                client.SendNotification("~r~Tu ne peut pas te warn toi même");
                 return;
             }
 
             playerInfo.warn += 1;
             playerInfo.Update();
 
-            player.SendChatMessage($"[~r~Server~w~]: Du bekamst eine Verwarnung und besitzt nun ~r~{playerInfo.warn}~w~ Verwarnungen.");
+            player.SendChatMessage($"[~r~Server~w~]:Vous avez reçu un avertissement, vous avez maintenant ~r~{playerInfo.warn}~w~ avertissement(s).");
 
             if (playerInfo.warn == 3)
             {
-                player.SendChatMessage("[~r~Server~w~]: Du besitzt zu viele Verwarnungen weswegen du auf diesem Server gesperrt wurdest!");
+                player.SendChatMessage("[~r~Server~w~]: Vous avez trop d'avertissements sur la raison pour laquelle vous avez été banni sur ce serveur!");
 
                 playerInfo.ban = 1;
                 playerInfo.Update();
@@ -91,7 +91,7 @@ namespace reallife.Commands
 
             if (!AdminSystem.HasRank(client, 1))
             {
-                client.SendChatMessage("Du bist nicht dazu befugt!");
+                client.SendChatMessage("Vous n'êtes pas autorisé!");
                 return;
             }
 
@@ -100,7 +100,7 @@ namespace reallife.Commands
                 PlayerData.Respawn(player);
             } else
             {
-                client.SendChatMessage("Spieler wurde nicht gefunden!");
+                client.SendChatMessage("Joueur introuvable");
                 return;
             }
         }
@@ -117,7 +117,7 @@ namespace reallife.Commands
             {
                 if (!client.IsInVehicle)
                 {
-                    client.SendNotification("~r~Du bist in keinem Fahrzeug!");
+                    client.SendNotification("~r~Vous n'êtes dans aucun véhicule!");
                     return;
                 }
                 else if (client.Position.DistanceTo2D(personal_vehicle.Position) <= 0.1)
