@@ -61,7 +61,7 @@ namespace reallife.Hotkey
             PlayerInfo pInfo = PlayerHelper.GetPlayerStats(client);
             if (pInfo.bkonto == 1)
             {
-                client.SendChatMessage("[~g~BANK~w~] Du besitzt bereits ein Bankkonto!");
+                client.SendChatMessage("[~g~BANK~w~] Vous possédez déjà un compte bancaire!");
                 // client.TriggerEvent("bKontoResult", 0);
                 return;
             }
@@ -88,7 +88,7 @@ namespace reallife.Hotkey
             PlayerInfo pInfo = PlayerHelper.GetPlayerStats(client);
             if (pInfo.bkonto == 0)
             {
-                client.SendChatMessage("[~g~Bank~w~] Du besitzt kein Bankkonto!");
+                client.SendChatMessage("[~g~Bank~w~] Vous n'avez pas de compte bancaire!");
                 return;
             }
             else

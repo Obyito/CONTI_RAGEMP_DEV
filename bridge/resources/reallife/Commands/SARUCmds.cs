@@ -18,13 +18,13 @@ namespace reallife.Commands
 
             if (!FraktionSystem.HasRank(client, 2))
             {
-                client.SendNotification("~r~Du gehörst nicht zur SARU!");
+                client.SendNotification("~r~Vous n'appartenez pas à la SARU!");
                 return;
             }
 
             if (!client.HasData("onduty"))
             {
-                client.SendNotification("~r~Du bist nicht im Dienst!");
+                client.SendNotification("~r~Vous n'êtes pas en service!");
                 return;
             }
 
@@ -32,33 +32,33 @@ namespace reallife.Commands
             {
                 if (!player.HasData("dead"))
                 {
-                    client.SendNotification("Dieser Spieler ist nicht gestorben!");
+                    client.SendNotification("Ce joueur n'est pas mort!");
                     return;
                 }
 
                 NAPI.Player.SpawnPlayer(player, pInfo.GetLastPlayerLocation());
-                player.SendNotification("Du wurdest respawnt!");
+                player.SendNotification("Vous avez été réapparu!");
                 NAPI.ClientEvent.TriggerClientEvent(player, "DeathFalse");
                 player.ResetData("dead");
 
                 cInfo.money += 100;
                 cInfo.Update();
-                client.SendNotification("[~r~SARU~w~]: Du hast 100~g~$~w~ erhalten.");
+                client.SendNotification("[~r~SARU~w~]: Vous avez 100~g~$~w~.");
 
                 if (pInfo.money > 100)
                 {
                     pInfo.money -= 100;
                     pInfo.Update();
-                    player.SendNotification("[~r~SARU~w~]: Du hast für die Behandlung 100~g~$~w~ bezahlt.");
+                    player.SendNotification("[~r~SARU~w~]: Vous avez payé 100~g~$~w~ pour le traitement..");
                 }
                 else if (pInfo.bank > 100)
                 {
                     pInfo.bank -= 100;
                     pInfo.Update();
-                    player.SendNotification("[~r~SARU~w~]: Du hast für die Behandlung 100~g~$~w~ bezahlt.");
+                    player.SendNotification("[~r~SARU~w~]: Vous avez payé 100~g~$~w~ pour le traitement.");
                 } else
                 {
-                    client.SendNotification("[~y~EasterEgg~w~]: Du bist verdammt arm! geh arbeiten!");
+                    client.SendNotification("[~y~EasterEgg~w~]: Tu es sacrément pauvre! Va travailler!");
                 }
 
                 EventTriggers.Update_Money(client);
@@ -69,7 +69,7 @@ namespace reallife.Commands
 
             } else
             {
-                client.SendNotification("Du bist nicht in der Nähe dieser Person!");
+                client.SendNotification("Vous n'êtes pas près de cette personne!");
             }
         }
 
@@ -95,18 +95,18 @@ namespace reallife.Commands
                         client.SetClothes(0, 124, 0);
                         client.SetClothes(5, 45, 0);
 
-                        client.SendNotification("Du bist nun im Dienst!");
+                        client.SendNotification("Vous êtes maintenant en service!");
 
                         client.SetData("fonduty", 1);
                     }
                 }
                 else
                 {
-                    client.SendNotification("~r~Du gehörst nicht zur SARU!");
+                    client.SendNotification("~r~Vous n'appartenez pas à la SARU!");
                 }
             } else
             {
-                client.SendNotification("Du bist nicht in der nähe von einem duty!");
+                client.SendNotification("Vous n'êtes pas près d'un devoir!");
             }
         }
 
@@ -115,30 +115,30 @@ namespace reallife.Commands
         {
             if (!FraktionSystem.HasRank(client, 2))
             {
-                client.SendNotification("~r~Du gehörst nicht zur SARU!");
+                client.SendNotification("~r~Vous n'appartenez pas à la SARU!");
                 return;
             }
 
             if (!client.HasData("onduty"))
             {
-                client.SendNotification("~r~Du befindest dich nicht im Dienst!");
+                client.SendNotification("~r~Vous n'êtes pas en service!");
                 return;
             }
 
             if (client.Name == player.Name)
             {
-                client.SendNotification("~r~Du kannst dich nicht selber angeben!");
+                client.SendNotification("~r~Vous ne pouvez pas vous spécifier!");
                 return;
             }
 
             if (client.Position.DistanceTo2D(player.Position) <= 3)
             {
                 player.Health = 100;
-                client.SendNotification("~g~Spieler erfolgreich geheilt!");
-                player.SendNotification($"~g~Du wurdest von {client.Name} geheilt!");
+                client.SendNotification("~g~Joueur guéri avec succès!");
+                player.SendNotification($"~g~Vous avez été guéri par  { client.Name} ");
             } else
             {
-                client.SendNotification("Der Spieler befindet sich nicht in deiner Nähe!");
+                client.SendNotification("Le joueur n'est pas dans votre région!");
             }
         }
 

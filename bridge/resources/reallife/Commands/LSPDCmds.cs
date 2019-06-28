@@ -27,13 +27,13 @@ namespace reallife.Commands
 
             if (!FraktionSystem.HasRank(client, 1))
             {
-                client.SendNotification("Du hast dazu keine Berechtigung!");
+                client.SendNotification("Vous avez été renvoyé du groupe!");
                 return;
             }
 
             if (!client.HasData("onduty"))
             {
-                client.SendNotification("~r~Du bist nicht im Dienst!");
+                client.SendNotification("~r~Vous êtes pas en service!");
                 return;
             }
 
@@ -41,13 +41,13 @@ namespace reallife.Commands
 
             if(client.Position.DistanceTo2D(new Vector3(442.9581, -975.1335, 30.68961)) <= 2)
             {
-                client.SendNotification($"[~b~Akte~w~]: {player.Name}");
-                client.SendNotification($"[~b~WantedLevel~w~]: {playerInfo.wantedlevel}");
-                client.SendNotification($"[~b~Vermögen~w~]: {vermoegen}~g~$");
-                client.SendNotification($"[~b~Fraktion~w~]: {PlayerInfo.WhichFrak(player)}");
+                client.SendNotification($"[~b~record~w~]: {player.Name}");
+                client.SendNotification($"[~b~niveau de recherche~w~]: {playerInfo.wantedlevel}");
+                client.SendNotification($"[~b~actif~w~]: {vermoegen}~g~$");
+                client.SendNotification($"[~b~Faction~w~]: {PlayerInfo.WhichFrak(player)}");
             } else
             {
-                client.SendNotification("Du befindest dich nicht in der Nähe der Akten.");
+                client.SendNotification("Vous n'êtes pas près des fichiers.");
             }
 
         }
@@ -60,24 +60,24 @@ namespace reallife.Commands
 
             if (!FraktionSystem.HasRank(client, 1))
             {
-                client.SendNotification("Du hast dazu keine Berechtigung!");
+                client.SendNotification("Vous n'avez aucune autorisation!");
                 return;
             }
 
             if (!player.HasData("onduty"))
             {
-                client.SendNotification("~r~Du bist nicht im Dienst!");
+                client.SendNotification("~r~Vous n'êtes pas en service!");
                 return;
             }
 
             if (client.Position.DistanceTo2D(player.Position) < 5)
             {
                 player.RemoveAllWeapons();
-                client.SendNotification($"[~b~LSPD~w~]: Die Waffen von {player.Name} wurden entfernt!");
-                player.SendNotification($"[~b~LSPD~w~]: Deine Waffen wurden von {client.Name} entfernt!");
+                client.SendNotification($"[~b~LSPD~w~]: Les armes de { player.Name} ont été enlevés!");
+                player.SendNotification($"[~b~LSPD~w~]: Vos armes viennent d'etre {client.Name} supprimé!");
             } else
             {
-                client.SendNotification("Spieler ist nicht in Reichweite!");
+                client.SendNotification("~r~Le joueur n'est pas à portée de main!");
             }
         }
 
@@ -89,25 +89,25 @@ namespace reallife.Commands
 
             if (!FraktionSystem.HasRank(client, 1))
             {
-                client.SendNotification("Du hast dazu keine Berechtigung!");
+                client.SendNotification("Vous n'avez aucune autorisation!");
                 return;
             }
 
             if (!client.HasData("onduty"))
             {
-                client.SendNotification("~r~Du bist nicht im Dienst!");
+                client.SendNotification("~r~Vous n'êtes pas en service!");
                 return;
             }
 
             if (!player.HasData("cuff") == true)
             {
-                client.SendNotification("Spieler ist nicht in Handschellen!");
+                client.SendNotification("Le joueur n'est pas menotté!");
                 return;
             }
 
             if (playerInfo.wantedlevel == 0)
             {
-                client.SendNotification("Dieser Spieler wird nicht gesucht!");
+                client.SendNotification("Ce joueur n'est pas recherché!");
                 return;
             }
 
@@ -122,16 +122,16 @@ namespace reallife.Commands
 
                     PlayerData.Respawn(player);
 
-                    client.SendNotification($"[~b~LSPD~w~]: Du hast ~y~{player.Name}~w~ in das Gefägnis gesteckt!");
-                    player.SendNotification($"[~b~LSPD~w~]: {client.Name}~w~ hat dich in das Gefängnis gesteckt!");
+                    client.SendNotification($"[~b~LSPD~w~]: Vous avez enfermé ~y~{player.Name}~w~ dans la prion !");
+                    player.SendNotification($"[~b~LSPD~w~]: {client.Name}~w~ Vous venez d'etre mis en prison");
                 } else
                 {
-                    client.SendNotification("Dieser Spieler befindet sich nicht in deiner Nähe!");
+                    client.SendNotification("Ce joueur n'est pas dans votre région!");
                 }
 
             } else
             {
-                client.SendNotification("Du kannst die Person hier nicht einsperren!");
+                client.SendNotification("Vous ne pouvez pas enfermer la personne ici!");
             }
 
         }
@@ -144,13 +144,13 @@ namespace reallife.Commands
 
             if (!FraktionSystem.HasRank(client, 1))
             {
-                client.SendNotification("Du hast dazu keine Berechtigung!");
+                client.SendNotification("Vous n'avez aucune autorisation!");
                 return;
             }
 
             if (!client.HasData("onduty"))
             {
-                client.SendNotification("~r~Du bist nicht im Dienst!");
+                client.SendNotification("~r~Vous n'êtes pas en service!");
                 return;
             }
 
@@ -162,12 +162,12 @@ namespace reallife.Commands
                     playerInfo.Update();
 
                     PlayerData.Respawn(player);
-                    client.SendNotification($"[~b~LSPD~w~]: Du hast ~y~{player.Name}~w~ aus dem Gefägnis gelassen!");
-                    player.SendNotification($"[~b~LSPD~w~]: {client.Name}~w~ hat dich aus dem Gefägnis gelassen!");
+                    client.SendNotification($"[~b~LSPD~w~]: ~y~{player.Name}~w~ta sortis de prison");
+                    player.SendNotification($"[~b~LSPD~w~]: {client.Name}~w~ vous a laissé en dehors de la prison!");
             }
             else
             {
-                client.SendNotification("Du kannst die Person hier nicht entlassen!");
+                client.SendNotification("Vous ne pouvez pas renvoyer la personne ici!");
             }
         }
 
@@ -179,36 +179,36 @@ namespace reallife.Commands
 
             if (!FraktionSystem.HasRank(client, 1))
             {
-                client.SendNotification("Du hast dazu keine Berechtigung!");
+                client.SendNotification("Vous n'avez aucune autorisation!");
                 return;
             }
 
             if (!client.HasData("onduty"))
             {
-                client.SendNotification("~r~Du bist nicht im Dienst!");
+                client.SendNotification("~r~Vous n'êtes pas en service!");
                 return;
             }
 
             if (player.HasData("cuff"))
             {
-                client.SendNotification("Dieser Spieler besitzt bereits Handschellen!");
+                client.SendNotification("Ce joueur a déjà des menottes!");
                 return;
             }
 
             if (playerInfo.jail == 1)
             {
-                client.SendNotification("Dieser Spieler kann im Gefängnis keine Handschellen tragen!");
+                client.SendNotification("Ce joueur ne peut pas être menotté en prison!");
                 return;
             }
 
             if(player.Position.DistanceTo2D(client.Position) < 5)
             {
                 NAPI.Player.PlayPlayerAnimation(player, (int)(AnimationFlags.Loop | AnimationFlags.OnlyAnimateUpperBody | AnimationFlags.AllowPlayerControl), "mp_arresting", "idle");
-                client.SendNotification("[~b~LSPD~w~]:~w~ Du hast diese Person festgenommen: " + player.Name);
+                client.SendNotification("[~b~LSPD~w~]:~w~ Vous avez arrêté : " + player.Name);
                 LSPD.cuff(player);
             } else
             {
-                client.SendNotification("Spieler ist nicht in Reichweite!");
+                client.SendNotification("Le joueur n'est pas à portée de main!");
             }
         }
 
@@ -220,30 +220,30 @@ namespace reallife.Commands
 
             if (!FraktionSystem.HasRank(client, 1))
             {
-                client.SendNotification("Du hast dazu keine Berechtigung!");
+                client.SendNotification("Vous n'avez aucune autorisation!");
                 return;
             }
 
             if (!player.HasData("onduty"))
             {
-                client.SendNotification("~r~Du bist nicht im Dienst!");
+                client.SendNotification("~r~Vous n'êtes pas en service!");
                 return;
             }
 
             if (!player.HasData("cuff"))
             {
-                client.SendNotification("[~b~LSPD~w~]: Dieser Spieler besitzt keine Handschellen!");
+                client.SendNotification("[~b~LSPD~w~]: Ce joueur n'a pas de menottes!");
                 return;
             }
 
             if (player.Position.DistanceTo2D(client.Position) < 5)
             {
                 NAPI.Player.StopPlayerAnimation(player);
-                client.SendNotification("[~b~LSPD~w~]: Du hast diese Person freigelassen: " + player.Name);
+                client.SendNotification("[~b~LSPD~w~]:Vous avez libéré: " + player.Name);
                 LSPD.uncuff(player);
             } else
             {
-                client.SendNotification("Spieler ist nicht in Reichweite!");
+                client.SendNotification("Le joueur n'est pas à portée de main!");
             }
         }
 
@@ -255,7 +255,7 @@ namespace reallife.Commands
 
             if (!FraktionSystem.HasRank(client, 1))
             {
-                client.SendNotification("Du hast keinen Zugriff auf diesen Befehl!");
+                client.SendNotification("Vous n'avez pas accès à cette commande!");
                 return;
             }
 
@@ -278,37 +278,37 @@ namespace reallife.Commands
 
             if (!FraktionSystem.HasRank(client, 1))
             {
-                client.SendNotification("~r~Du gehörst nicht zur LSPD!");
+                client.SendNotification("~r~Vous n'appartenez pas à la LSPD!");
                 return;
             }
 
             if (!client.HasData("onduty"))
             {
-                client.SendNotification("~r~Du befindest dich nicht im Dienst!");
+                client.SendNotification("~r~Vous n'êtes pas en service!");
                 return;
             }
 
             if (player == null)
             {
-                client.SendNotification("Spieler wurde nicht gefunden!");
+                client.SendNotification("Le joueur n'a pas été trouvé!");
                 return;
             }
 
             if (client.Name == player.Name)
             {
-                client.SendNotification("~r~Du kannst dich nicht selber angeben!");
+                client.SendNotification("~r~Vous ne pouvez pas vous spécifier!");
                 return;
             }
 
             if (pInfo.wantedlevel - wanteds <= 0)
             {
-                client.SendChatMessage("Du kannst dem Spieler nicht weniger als 0 Wanteds geben!");
+                client.SendChatMessage("Vous ne pouvez pas donner au joueur pas moins de 0 Wanted!");
                 return;
             }
 
             pInfo.wantedlevel -= wanteds;
-            client.SendNotification($"[~b~LSPD~w~]: Du hast ~r~{player.Name}~w~ erfolgreich ~r~{wanteds} Wanteds~w~ abgezogen!");
-            player.SendChatMessage($"[~b~LSPD~w~]: ~b~{client.Name}~w~ hat dir ~r~{wanteds} Wanteds~w~ abgezogen!");
+            client.SendNotification($"[~b~LSPD~w~]: Vous avez enlevé un recherche à ~r~{player.Name}~w~ il à ~r~{wanteds} recherche~w~!");
+            player.SendChatMessage($"[~b~LSPD~w~]: ~b~{client.Name}~w~ a vous ~r~{wanteds} recherche~w~ abgezogen!");
             pInfo.Update();
             EventTriggers.Update_Wanteds(player);
         }
@@ -320,37 +320,37 @@ namespace reallife.Commands
 
             if (!FraktionSystem.HasRank(client, 1))
             {
-                client.SendNotification("~r~Du gehörst nicht zur LSPD!");
+                client.SendNotification("~r~Vous n'appartenez pas à la LSPD!");
                 return;
             }
 
             if (!client.HasData("onduty"))
             {
-                client.SendNotification("~r~Du befindest dich nicht im Dienst!");
+                client.SendNotification("~r~Vous n'êtes pas de service!");
                 return;
             }
 
             if (player == null)
             {
-                client.SendNotification("Spieler wurde nicht gefunden!");
+                client.SendNotification("Le joueur n'a pas été trouvé!");
                 return;
             }
 
             if (client.Name == player.Name)
             {
-                client.SendNotification("~r~Du kannst dich nicht selber angeben!");
+                client.SendNotification("~r~Vous ne pouvez pas vous spécifier!");
                 return;
             }
 
             if (pInfo.wantedlevel > 4)
             {
-                client.SendNotification("Dieser Spieler hat zu viele Wanteds!");
+                client.SendNotification("Ce joueur a trop de souhaits!");
                 return;
             }
 
             pInfo.wantedlevel = 0;
-            client.SendNotification($"[~b~LSPD~w~]: Du hast die Akte von {player.Name} ~r~gelöscht~w~!");
-            player.SendChatMessage($"[~b~LSPD~w~]: ~b~{client.Name}~w~ hat deine Akte ~r~gelöscht~w~!");
+            client.SendNotification($"[~b~LSPD~w~]: Vous avez supprimé le dossier de { player.Name} ~r~~w~!");
+            player.SendChatMessage($"[~b~LSPD~w~]: ~b~{client.Name}~w~ à supprimer ton dossier ~r~~w~!");
             pInfo.Update();
             EventTriggers.Update_Wanteds(player);
         }
@@ -362,37 +362,37 @@ namespace reallife.Commands
 
             if (!FraktionSystem.HasRank(client, 1))
             {
-                client.SendNotification("~r~Du gehörst nicht zur LSPD!");
+                client.SendNotification("~r~Vous n'appartenez pas à la LSPD!");
                 return;
             }
 
             if (!client.HasData("onduty"))
             {
-                client.SendNotification("~r~Du befindest dich nicht im Dienst!");
+                client.SendNotification("~r~Vous n'êtes pas en service!");
                 return;
             }
 
             if (player == null)
             {
-                client.SendNotification("Spieler wurde nicht gefunden!");
+                client.SendNotification("Le joueur n'a pas été trouvé!");
                 return;
             }
 
             if (client.Name == player.Name)
             {
-                client.SendNotification("~r~Du kannst dich nicht selber angeben!");
+                client.SendNotification("~r~Vous ne pouvez pas vous spécifier!");
                 return;
             }
 
             if (wanteds > 6)
             {
-                client.SendChatMessage("Du kannst nicht mehr als 6 Wanteds verteilen!");
+                client.SendChatMessage("Vous ne pouvez pas distribuer plus de 6 Wanted!");
                 return;
             }
 
             pInfo.wantedlevel += wanteds;
-            client.SendNotification($"[~b~LSPD~w~]: Du hast ~r~{player.Name}~w~ erfolgreich ~r~{wanteds} Wanteds~w~ gegeben!");
-            player.SendChatMessage($"[~b~LSPD~w~]: ~b~{client.Name}~w~ hat dir ~r~{wanteds} Wanteds~w~ gegeben!");
+            client.SendNotification($"[~b~LSPD~w~]: Le joueur ~r~{player.Name}~w~ vous à donné  ~r~{wanteds} recherche~w~ !");
+            player.SendChatMessage($"[~b~LSPD~w~]: ~b~{client.Name}~w~ est recherché ~r~{wanteds} ~w~ !");
             pInfo.Update();
             EventTriggers.Update_Wanteds(player);
         }

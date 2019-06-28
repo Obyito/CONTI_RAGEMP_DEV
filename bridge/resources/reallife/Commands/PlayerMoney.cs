@@ -16,12 +16,12 @@ namespace reallife.Commands
 
             if (playerInfo == null)
             {
-                Console.WriteLine("Spieler Statistiken konnten nicht gefunden werden.");
+                Console.WriteLine("Les statistiques des joueurs sont introuvables.");
                 return;
             }
 
-            client.SendNotification($"Dein Guthaben beträgt: ~g~{playerInfo.money}$");
-            client.SendNotification($"Dein Bankguthaben beträgt: ~g~{playerInfo.bank}$");
+            client.SendNotification($"Votre solde est de: ~g~{playerInfo.money}$");
+            client.SendNotification($"Votre solde bancaire est de: ~g~{playerInfo.bank}$");
 
             EventTriggers.Update_Money(client);
         }
@@ -37,7 +37,7 @@ namespace reallife.Commands
 
             if (pInfo == null)
             {
-                client.SendNotification($"Spieler {player.Name} konnte nicht gefunden werden.");
+                client.SendNotification($"Le joueur {player.Name} n'a pas pu être trouvé.");
                 return;
             }
 
@@ -46,7 +46,7 @@ namespace reallife.Commands
 
             if (otherInfo == null)
             {
-                Console.WriteLine($"{pInfo.vorname} {pInfo.nachname} besitzt keine PlayerInfo Tabelle!");
+                Console.WriteLine($"{pInfo.vorname} {pInfo.nachname} n'a pas de table PlayerInfo!");
                 return;
             }
 
@@ -54,7 +54,7 @@ namespace reallife.Commands
 
             if (!result)
             {
-                client.SendNotification("~r~Dieses Geld besitzt du nicht!");
+                client.SendNotification("~r~Vous ne possédez pas cet argent!");
                 return;
             }
 
@@ -63,8 +63,8 @@ namespace reallife.Commands
             Database.Update(otherInfo);
             Database.Update(playerInfo);
 
-            client.SendNotification($"Du hast dem Spieler {player.Name} erfolgreich ~g~{amount}$ ~w~gegeben!");
-            player.SendNotification($"Du hast ~g~{amount}~w~ von {client.Name} erhalten!");
+            client.SendNotification($"Vous avez donné au joueur { player.Name} ~g~{amount}$ ~w~avec succes!");
+            player.SendNotification($"Vous avez reçu ~g~{amount}~w~ de {client.Name} !");
             EventTriggers.Update_Money(client);
 
             Client other_player = NAPI.Player.GetPlayerFromName(player.Name);
@@ -92,7 +92,7 @@ namespace reallife.Commands
             if (!result)
                 return;
 
-            client.SendNotification($"~g~Du hast {amount}$ weggeworfen!");
+            client.SendNotification($"~g~tu as jeté {amount}$ !");
             EventTriggers.Update_Money(client);
         }
     }

@@ -45,21 +45,21 @@ namespace reallife.Data
             {
                 tarInfo.last_location = new double[] { 447.9005, -973.0226, 30.68961 };
                 tarInfo.Update();
-                target.SendChatMessage("[~y~Fraktion~w~]: Du wurdest in die Fraktion ~b~LSPD~w~ eingeladen!");
+                target.SendChatMessage("[~y~Fraktion~w~]: Vous avez été invité à la faction ~b~LSPD~w~ !");
             }
 
             if (rank == 2)
             {
                 tarInfo.last_location = new double[] { 1151.196, -1529.605, 35.36937 };
                 tarInfo.Update();
-                target.SendChatMessage("[~y~Fraktion~w~]: Du wurdest in die Fraktion ~b~SARU~w~ eingeladen!");
+                target.SendChatMessage("[~y~Fraktion~w~]: Vous avez été invité à la faction ~b~SARU~w~ !");
             }
 
             if (rank == 3)
             {
                 tarInfo.last_location = new double[] { 85.90534, -1956.926, 20.74745 };
                 tarInfo.Update();
-                target.SendChatMessage("[~y~Fraktion~w~]: Du wurdest in die Fraktion ~b~Grove Street~w~ eingeladen!");
+                target.SendChatMessage("[~y~Fraktion~w~]: Vous avez été invité à la faction ~b~Grove Street~w~ !");
             }
 
             tarInfo.fraktion = rank;

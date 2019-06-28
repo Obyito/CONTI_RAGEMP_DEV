@@ -32,9 +32,9 @@ namespace reallife.Fraktion
         public LSPD()
         {
             //3D Textelemente
-            NAPI.TextLabel.CreateTextLabel("Benutze ~b~/fcar~w~ um dir ein Polizeiwagen\n zu spawnen.", new Vector3(458.2729, -1008.082, 28.28012), 12, 1f, 4, new Color(255, 255, 255, 255));
-            NAPI.TextLabel.CreateTextLabel("Benutze ~b~/entlassen~w~ oder ~b~/einsperren~w~.", new Vector3(461.9194, -989.1077, 24.91486), 12, 1f, 4, new Color(255, 255, 255, 255));
-            NAPI.TextLabel.CreateTextLabel("Benutze ~b~/akte~w~ um die Akte von jemanden zu sehen.", new Vector3(442.9581, -975.1335, 30.68961), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Utiliser ~b~/fcar~w~ pour faire apparaître une voiture de police.", new Vector3(458.2729, -1008.082, 28.28012), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Utiliser ~b~/entlassen~w~ ou ~b~/einsperren~w~.", new Vector3(461.9194, -989.1077, 24.91486), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Utiliser ~b~/akte~w~ pour voir le dossier de quelqu'un.", new Vector3(442.9581, -975.1335, 30.68961), 12, 1f, 4, new Color(255, 255, 255, 255));
 
 
             //Checkpoint
@@ -60,7 +60,7 @@ namespace reallife.Fraktion
                 {
                     if (!FraktionSystem.HasRank(client, 1))
                     {
-                        client.SendNotification("~r~Du bist dazu nicht befugt!");
+                        client.SendNotification("~r~Vous n'êtes pas autorisé à le faire!");
                         client.WarpOutOfVehicle();
                     }
                 } 

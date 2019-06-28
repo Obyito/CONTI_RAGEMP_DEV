@@ -42,10 +42,10 @@ C:\RAGEMP\server-files\bridge\resources\reallife\bin\Debug\netcoreapp2.1\Colorfu
 C:\RAGEMP\server-files\bridge\resources\reallife\bin\Debug\netcoreapp2.1\Ben.Demystifier.dll
 C:\RAGEMP\server-files\bridge\resources\reallife\bin\Debug\netcoreapp2.1\NeoSmart.Hashing.dll
 C:\RAGEMP\server-files\bridge\resources\reallife\bin\Debug\netcoreapp2.1\xxHash.dll
-C:\RAGEMP\server-files\bridge\resources\reallife\obj\Debug\netcoreapp2.1\reallife.csprojAssemblyReference.cache
 C:\RAGEMP\server-files\bridge\resources\reallife\obj\Debug\netcoreapp2.1\reallife.csproj.CoreCompileInputs.cache
 C:\RAGEMP\server-files\bridge\resources\reallife\obj\Debug\netcoreapp2.1\reallife.AssemblyInfoInputs.cache
 C:\RAGEMP\server-files\bridge\resources\reallife\obj\Debug\netcoreapp2.1\reallife.AssemblyInfo.cs
 C:\RAGEMP\server-files\bridge\resources\reallife\obj\Debug\netcoreapp2.1\reallife.csproj.CopyComplete
 C:\RAGEMP\server-files\bridge\resources\reallife\obj\Debug\netcoreapp2.1\reallife.dll
 C:\RAGEMP\server-files\bridge\resources\reallife\obj\Debug\netcoreapp2.1\reallife.pdb
+C:\RAGEMP\server-files\bridge\resources\reallife\obj\Debug\netcoreapp2.1\reallife.csprojAssemblyReference.cache

@@ -51,16 +51,16 @@ namespace reallife.Player
 
                 if (!vehicleToLock.Locked)
                 {
-                    client.SendNotification($"~g~Das Fahrzeug wurde aufgeschlossen!");
+                    client.SendNotification($"~g~Le véhicule était déverrouillé!");
                 }
                 else
                 {
-                    client.SendNotification($"~r~Das Fahrzeug wurde abgeschlossen!");
+                    client.SendNotification($"~r~Le véhicule était terminé!");
                 }
             }
             else
             {
-                client.SendNotification("Du befindest dich nicht in der nähe von einem deiner Fahrzeuge!");
+                client.SendNotification("Vous n'êtes pas à proximité de vos véhicules!");
             }
         }
 
@@ -74,7 +74,7 @@ namespace reallife.Player
 
             if (!client.IsInVehicle)
             {
-                client.SendNotification("Du befindest dich in keinem Fahrzeug!");
+                client.SendNotification("Vous n'êtes pas dans un véhicule!");
                 return;
             }
 
@@ -117,7 +117,7 @@ namespace reallife.Player
                     break;
 
                 default:
-                    client.SendNotification("~r~Du besitzt für dieses Fahrzeug keinen Schlüssel!");
+                    client.SendNotification("~r~Vous n'avez pas de clé pour ce véhicule!");
                     break;
             }
         }
@@ -129,12 +129,12 @@ namespace reallife.Player
             if (engine == false)
             {
                 engine = client.Vehicle.EngineStatus = true;
-                client.SendNotification("~g~Der Motor wurde gestartet!");
+                client.SendNotification("~g~Der Le moteur a été démarré!");
             }
             else
             {
                 engine = client.Vehicle.EngineStatus = false;
-                client.SendNotification("~r~Der Motor wurde augeschaltet");
+                client.SendNotification("~r~Der Le moteur a été éteint");
             }
         }
 

@@ -66,41 +66,41 @@ namespace reallife.Commands
             pInfo.Update();
         }
 
-        [Command("hilfe")]
+        [Command("aide")]
         public void CMD_Help(Client client)
         {
             NAPI.Chat.SendChatMessageToPlayer(client, "~y~╔════════════════════════════════════════════════════════════════╗");
-            NAPI.Chat.SendChatMessageToPlayer(client, "~y~╠Allgemein: ~w~/befehle. ~w~ (Allgemeine Befehle)");
-            NAPI.Chat.SendChatMessageToPlayer(client, "~y~╠Allgemein: ~w~/fahrzeugbefehle. ~w~ (Befehle für Fahrzeuge)");
-            NAPI.Chat.SendChatMessageToPlayer(client, "~y~╠Allgemein: ~w~/fraktionsbefehle. ~w~ (Befehle für die Fraktion)");
+            NAPI.Chat.SendChatMessageToPlayer(client, "~y~╠Allgemein: ~w~/help. ~w~ (Commandes générales)");
+            NAPI.Chat.SendChatMessageToPlayer(client, "~y~╠Allgemein: ~w~/hcar. ~w~ (Commandes de véhicules)");
+            NAPI.Chat.SendChatMessageToPlayer(client, "~y~╠Allgemein: ~w~/hfaction. ~w~ (Commandes pour la faction)");
             NAPI.Chat.SendChatMessageToPlayer(client, "~y~╚════════════════════════════════════════════════════════════════╝");
         }
 
-        [Command("befehle")]
+        [Command("help")]
         public void CMD_Befehle(Client player)
         {
             NAPI.Chat.SendChatMessageToPlayer(player, "~y~╔════════════════════════════════════════════════════════════════╗");
-            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Befehle:~w~ /save - Speichere deine jetzige Position.");
-            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Befehle:~w~ /showstats [Spieler] - Zeige einem Spieler Informationen über dich.");
-            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Befehle:~w~ /money - Siehe dein Geld und Bankguthaben.");
-            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Befehle:~w~ /givemoney [Spieler] [Menge] - Gib einem Spieler Geld.");
+            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Befehle:~w~ /save - Enregistrez votre position actuelle.");
+            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Befehle:~w~ /showstats [joueur] - Afficher les informations d'un joueur sur vous.");
+            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Befehle:~w~ /money - Voir votre argent et votre solde bancaire.");
+            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Befehle:~w~ /givemoney [joueur] [$] - Donner de l'argent à un joueur.");
             NAPI.Chat.SendChatMessageToPlayer(player, "~y~╚════════════════════════════════════════════════════════════════╝");
         }
 
-        [Command("fahrzeugbefehle")]
+        [Command("hcar")]
         public void CMD_FahrzeugBefehle(Client player)
         {
             NAPI.Chat.SendChatMessageToPlayer(player, "~y~╔════════════════════════════════════════════════════════════════╗");
-            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Fahrzeugbefehle: ~w~/lock - Auf & Abschliessen.");
-            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Fahrzeugbefehle: ~w~/park - Fahrzeug Parken.");
-            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Fahrzeugbefehle: ~w~/gurt - An & Abschnallen.");
-            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Fahrzeugbefehle: ~w~/motor - Motor anschalten / abschalten.");
-            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Mietbefehle: ~w~/rent - Miete dir für 150$ einen Roller.");
-            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Mietbefehle: ~w~/unrent - Gib deinen Roller wieder ab.");
+            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Fahrzeugbefehle: ~w~/lock - ouvrir & fermer vehicule.");
+            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Fahrzeugbefehle: ~w~/park - Parking de véhicules.");
+            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Fahrzeugbefehle: ~w~/gurt - Attaché & Détaché.");
+            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Fahrzeugbefehle: ~w~/motor - allumer / eteindre.");
+            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Mietbefehle: ~w~/rent - Louez un scooter pour 150 $.");
+            NAPI.Chat.SendChatMessageToPlayer(player, "~y~╠Mietbefehle: ~w~/unrent - rendre votre scooter.");
             NAPI.Chat.SendChatMessageToPlayer(player, "~y~╚════════════════════════════════════════════════════════════════╝");
         }
 
-        [Command("fraktionsbefehle")]
+        [Command("hfaction")]
         public void CMD_FraktionsBefehle(Client player)
         {
             if (FraktionSystem.HasRank(player, 0))

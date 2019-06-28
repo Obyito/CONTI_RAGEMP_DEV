@@ -38,19 +38,19 @@ namespace reallife.Data
                 Vehicle previous_vehicle = client.GetData("FrakVehicle");
                 previous_vehicle.Delete();
                 client.ResetData("FrakVehicle");
-                client.SendNotification("Dein Fraktionsfahrzeug wurde gelöscht!");
+                client.SendNotification("Votre véhicule de faction a été supprimé!");
             }
 
             if (client.HasData("onduty"))
             {
                 client.ResetData("onduty");
-                client.SendNotification("Du bist nun nicht mehr im Dienst!");
+                client.SendNotification("Vous n'êtes plus en service!");
             }
 
             if (client.HasData("fonduty"))
             {
                 client.ResetData("fonduty");
-                client.SendNotification("Du bist nun nicht mehr im Dienst!");
+                client.SendNotification("Vous n'êtes plus en service!");
             }
 
             if (playerInfo.jail == 1)
@@ -90,14 +90,14 @@ namespace reallife.Data
                 playerInfo.Update();
 
                 NAPI.ClientEvent.TriggerClientEvent(client, "JailTrue");
-                client.SendNotification("[~b~LSPD~w~]: Bitte logge dich nicht aus sonst sitzt du wieder so lange!");
+                client.SendNotification("[~b~LSPD~w~]: S'il vous plaît ne vous déconnectez pas ou vous serez assis à nouveau pendant si longtemps!");
 
-                client.SendNotification($"[~b~LSPD~w~]: Du sitzt für ~r~{ts.Minutes}~w~ Minuten.");
+                client.SendNotification($"[~b~LSPD~w~]: Vous êtes assis pour ~r~{ts.Minutes}~w~ Minutes.");
 
                 NAPI.Task.Run(() =>
                 {
                     NAPI.ClientEvent.TriggerClientEvent(client, "JailFalse");
-                    client.SendNotification("[~b~LSPD~w~]: Du bist nun frei!");
+                    client.SendNotification("[~b~LSPD~w~]: Vous êtes libre maintenant!");
                     playerInfo.jail = 0;
                     playerInfo.jailtime = 0;
                     playerInfo.Update();
@@ -112,7 +112,7 @@ namespace reallife.Data
             EventTriggers.Update_Money(client);
             EventTriggers.Update_Bank(client);
 
-            client.SendNotification("~g~Du wurdest respawnt!");
+            client.SendNotification("~g~Vous etes réapparu!");
         }
 
         public static void ResetClothes(Client client)
@@ -167,7 +167,7 @@ namespace reallife.Data
             client.GiveWeapon(hash4, 1);
 
 
-            client.SendNotification("Du bist nun im Dienst!");
+            client.SendNotification("Vous êtes maintenant en service!");
             client.SetData("onduty", 1);
         }
 
@@ -181,7 +181,7 @@ namespace reallife.Data
 
             client.RemoveAllWeapons();
 
-            client.SendNotification("Du bist nun im Dienst!");
+            client.SendNotification("Vous êtes maintenant en service!");
             client.SetData("onduty", 1);
         }
 
@@ -208,7 +208,7 @@ namespace reallife.Data
                 Vehicle previous_vehicle = client.GetData("FrakVehicle");
                 previous_vehicle.Delete();
                 client.ResetData("FrakVehicle");
-                client.SendNotification("Dein Fraktionsfahrzeug wurde gelöscht!");
+                client.SendNotification("Votre véhicule de faction a été supprimé!");
             }
 
             if (client.HasData("onduty"))
@@ -221,7 +221,7 @@ namespace reallife.Data
                 client.ResetData("fonduty");
             }
 
-            client.SendNotification("Du bist nun nicht mehr im Dienst!");
+            client.SendNotification("Vous n'êtes plus en service!");
         }
     }
 }

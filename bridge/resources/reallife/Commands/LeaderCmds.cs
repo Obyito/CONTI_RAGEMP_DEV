@@ -20,32 +20,32 @@ namespace reallife.Commands
             //Abfrage ob man ein Leader ist
             if (!LeaderSystem.IsLeader(client))
             {
-                client.SendNotification("~r~Du bist kein Leader!");
+                client.SendNotification("~r~Vous n'êtes pas un leader!");
                 return;
             }
 
             if (!LeaderSystem.Same(client, player))
             {
-                client.SendNotification("~r~Ihr befindet euch nicht in der selben Fraktion!");
+                client.SendNotification("~r~Vous n'êtes pas dans la même faction!");
                 return;
             }
 
             if (client.Name == player.Name)
             {
-                client.SendNotification("~r~Du kannst dich nicht selber angeben!");
+                client.SendNotification("~r~Vous ne pouvez pas vous spécifier!");
                 return;
             }
 
             if (playerInfo.fwarn == 0)
             {
-                player.SendNotification("Spieler besitzt keine Warn's!");
+                player.SendNotification("Le joueur n'a pas d'avertissement!");
                 return;
             }
 
             playerInfo.fwarn -= 1;
             playerInfo.Update();
 
-            player.SendChatMessage("[~g~Fraktion~w~]: Eine Verwarnung wurde entfernt!");
+            player.SendChatMessage("[~g~Faction~w~]: Un avertissement a été supprimé!");
         }
 
         [Command("fwarn")]
@@ -58,31 +58,31 @@ namespace reallife.Commands
             //Abfrage ob man ein Leader ist
             if (!LeaderSystem.IsLeader(client))
             {
-                client.SendNotification("~r~Du bist kein Leader!");
+                client.SendNotification("~r~Vous n'êtes pas un leader!");
                 return;
             }
 
             if (!LeaderSystem.Same(client, player))
             {
-                client.SendNotification("~r~Ihr befindet euch nicht in der selben Fraktion!");
+                client.SendNotification("~r~Vous n'êtes pas dans la même faction!");
                 return;
             }
 
             if (client.Name == player.Name)
             {
-                client.SendNotification("~r~Du kannst dich nicht selber angeben!");
+                client.SendNotification("~r~Vous ne pouvez pas vous spécifier!");
                 return;
             }
 
             playerInfo.fwarn += 1;
             playerInfo.Update();
 
-            player.SendChatMessage($"[~g~Fraktion~w~]: Du bekamst eine Verwarnung und besitzt nun ~r~{playerInfo.fwarn}~w~ Verwarnungen.");
+            player.SendChatMessage($"[~g~Fraktion~w~]: Vous avez reçu un avertissement. ~r~{playerInfo.fwarn}~w~ avertissements.");
 
             if (playerInfo.fwarn == 3)
             {
-                player.SendChatMessage("[~g~Fraktion~w~]: Du besitzt zu viele Verwarnungen weswegen du aus der Fraktion entlassen wurdest!");
-                player.SendNotification("~r~Du wurdest aus der Fraktion entlassen!");
+                player.SendChatMessage("[~g~Fraktion~w~]: Vous avez trop d'avertissements sur la raison pour laquelle vous avez été libéré de la faction!");
+                player.SendNotification("~r~Vous avez été renvoyé du groupe!");
                 playerInfo.fraktion = 0;
                 playerInfo.last_location = new double[] { -1167.994, -700.4285, 21.89281 };
 
@@ -101,7 +101,7 @@ namespace reallife.Commands
             //Abfrage ob man ein Leader ist
             if (!LeaderSystem.IsLeader(client))
             {
-                client.SendNotification("~r~Du bist kein Leader!");
+                client.SendNotification("~r~Vous n'êtes pas un leader!");
                 return;
             }
 
@@ -113,13 +113,13 @@ namespace reallife.Commands
 
             if (FraktionSystem.SetRank(player, leaderInfo.fleader))
             {
-                client.SendNotification($"[~r~Server~w~] Spieler {player} wurde in die Fraktion eingeladen.");
+                client.SendNotification($"[~r~Server~w~] {player} a été invité au groupe.");
                 PlayerData.Respawn(client);
                 return;
             }
             else
             {
-                client.SendNotification($"[~r~Server~w~] Spieler {player} konnte nicht in die Fraktion eingeladen werden!");
+                client.SendNotification($"[~r~Server~w~] {player} ne peut pas être invité au groupe!");
                 return;
             }
 
@@ -135,14 +135,14 @@ namespace reallife.Commands
             //Abfrage ob man ein Leader ist
             if (!LeaderSystem.IsLeader(client))
             {
-                client.SendNotification("~r~Du bist kein Leader!");
+                client.SendNotification("~r~Vous n'êtes pas un leader!");
                 return;
             }
 
             //Abfrage ob Leader und Spieler in der selben Fraktion sind
             if (!LeaderSystem.Same(client, player))
             {
-                client.SendNotification("~r~Dieser Spieler gehört nicht zu deiner Fraktion!");
+                client.SendNotification("~r~Ce joueur n'est pas dans votre faction!");
                 return;
             }
 
@@ -152,8 +152,8 @@ namespace reallife.Commands
                 return;
             }*/
 
-            client.SendNotification("Spieler wurde erfolgreich aus der Fraktion rausgeworfen!");
-            player.SendNotification("~r~Du wurdest aus der Fraktion entlassen!");
+            client.SendNotification("Le joueur a été expulsé de la faction avec succès!");
+            player.SendNotification("~r~Vous avez été renvoyé du groupe!");
             playerInfo.fraktion = 0;
             playerInfo.last_location = new double[] { -1167.994, -700.4285, 21.89281 };
 

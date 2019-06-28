@@ -9,10 +9,10 @@ namespace reallife.Data
     class LeaderSystem
     {
         static readonly string[] leaderText = new string[] {
-            "als Leader der Fraktion entlassen.",
-            "zum Leader der Fraktion LSPD ernannt.",
-            "zum Leader der Fraktion SARU ernannt.",
-            "zum Leader der Fraktion Grove Street ernannt." };
+            "rejeté comme leader du groupe.",
+            "nommé chef du groupe LSPD.",
+            "nommé chef du groupe SARU.",
+            "nommé chef du groupe Grove Street." };
 
         public static string GetSetLeaderText(Client client)
         {
@@ -82,28 +82,28 @@ namespace reallife.Data
             {
                 tarInfo.last_location = new double[] { -1167.994, -700.4285, 21.89281 };
                 tarInfo.Update();
-                target.SendChatMessage($"Du wurdest als Leader entlassen und bist absofort Arbeitslos!");
+                target.SendChatMessage($"Vous avez été licencié en tant que leader et êtes maintenant au chômage!");
             }
 
             if (rank == 1)
             {
                 tarInfo.last_location = new double[] { 447.9005, -973.0226, 30.68961 };
                 tarInfo.Update();
-                target.SendChatMessage("Du wurdest zum ~y~Leader~w~ der ~b~LSPD~w~ ernannt!");
+                target.SendChatMessage("Vous êtes devenu le ~y~Leader~w~ de la ~b~LSPD~w~ !");
             }
 
             if (rank == 2)
             {
                 tarInfo.last_location = new double[] { 1151.196, -1529.605, 35.36937 };
                 tarInfo.Update();
-                target.SendChatMessage("Du wurdest zum ~y~Leader~w~ der ~b~SARU~w~ ernannt!");
+                target.SendChatMessage("Vous êtes devenu le ~y~Leader~w~ de la ~b~SARU~w~ !");
             }
 
             if (rank == 3)
             {
                 tarInfo.last_location = new double[] { 85.90534, -1956.926, 20.74745 };
                 tarInfo.Update();
-                target.SendChatMessage("Du wurdest zum ~y~Leader~w~ der ~g~Grove Street~w~ ernannt!");
+                target.SendChatMessage("Vous êtes devenu le ~y~Leader~w~ de ~g~Grove Street~w~ !");
             }
 
             tarInfo.fleader = rank;

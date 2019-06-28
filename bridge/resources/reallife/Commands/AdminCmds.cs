@@ -19,7 +19,7 @@ namespace reallife.Commands
             //Abfrage ob man ein Leader ist
             if (!AdminSystem.HasRank(client, 1))
             {
-                client.SendNotification("~rTu n'es pas Admin.");
+                client.SendNotification("~r~Tu n'es pas Admin.");
                 return;
             }
 
@@ -152,13 +152,13 @@ namespace reallife.Commands
                 }
                 else
                 {
-                    client.SendNotification("~r~Du darfst dieses Fahrzeug nicht tunen!");
+                    client.SendNotification("~r~Vous ne pouvez pas régler ce véhicule!");
                     return;
                 }
             }
             else
             {
-                client.SendNotification("Du bist nicht beim Test Tuner");
+                client.SendNotification("Vous n'êtes pas au testeur");
                 return;
             }
         }
@@ -168,12 +168,12 @@ namespace reallife.Commands
         {
             if (!AdminSystem.HasRank(client, 2))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez pas l'autorisation!");
                 return;
             }
 
             for (int i = 0; i < 99; i++) NAPI.Chat.SendChatMessageToAll("~w~");
-            NAPI.Chat.SendChatMessageToAll($"~r~[SERVER]: ~w~{client.Name} hat den Chat gesäubert!");
+            NAPI.Chat.SendChatMessageToAll($"~r~[SERVER]: ~w~{client.Name} à nettoyé le chat!");
 
         }
 
@@ -184,7 +184,7 @@ namespace reallife.Commands
 
             if (!AdminSystem.HasRank(client, 3))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez pas l'autorisation!");
                 return;
             }
 
@@ -192,17 +192,17 @@ namespace reallife.Commands
             {
                 if (AdminSystem.SetRank(client, playerName, rank))
                 {
-                    client.SendNotification("Rank wurde gesetzt!");
+                    client.SendNotification("Le rang à était défini!");
                     return;
                 }
                 else
                 {
-                    client.SendNotification("Rank wurde NICHT gesetzt!");
+                    client.SendNotification("Le rang n'a pas était défini!");
                     return;
                 }
             } else
             {
-                client.SendChatMessage("Spieler wurde nicht gefunden!");
+                client.SendChatMessage("Le joueur n'a pas été trouvé!");
                 return;
             }
 
@@ -215,18 +215,18 @@ namespace reallife.Commands
 
             if (!AdminSystem.HasRank(client, 2))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez pas l'autorisation!");
                 return;
             }
 
             if (LeaderSystem.SetRank(player, rank))
             {
-                client.SendNotification($"[~r~Server~w~] Spieler {player} wurde {LeaderSystem.GetSetLeaderText(target)}");
+                client.SendNotification($"[~r~Server~w~] Joueur {player} était {LeaderSystem.GetSetLeaderText(target)}");
                 PlayerData.Respawn(client);
                 return;
             } else
             {
-                client.SendNotification($"[~r~Server~w~] Spieler {player} konnte nicht zum Leader ernannt werden!");
+                client.SendNotification($"[~r~Server~w~] Joueur {player} ne peut pas être nommé chef!");
                 return;
             }
         }
@@ -238,11 +238,11 @@ namespace reallife.Commands
 
             if (!AdminSystem.HasRank(client, 1))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez pas l'autorisation!");
                 return;
             }
 
-                NAPI.Chat.SendChatMessageToAll($"[~r~SERVER~w~] Der Spieler {player.Name} wurde wegen: {grund}, ~y~gekickt!");
+                NAPI.Chat.SendChatMessageToAll($"[~r~SERVER~w~] Le joueur {player.Name} était à cause de: {grund}, ~y~coups de pied!");
                 Kicklog = new KickLog();
                 Kicklog.kicked = player.Name;
                 Kicklog.kickedby = client.Name;
@@ -258,26 +258,26 @@ namespace reallife.Commands
 
             if (!AdminSystem.HasRank(client, 2))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez pas l'autorisation!");
                 return;
             }
 
             if (tarInfo == null)
             {
-                client.SendNotification("Spieler konnte in der Datenbank NICHT gefunden werden.");
+                client.SendNotification("Le joueur n'a pas pu être trouvé dans la base de données.");
                 return;
             }
 
             if (tarInfo.ban <= 0 && tarInfo.ban >= 2)
             {
-                client.SendNotification("Spieler ist nicht gebannt!");
+                client.SendNotification("Le joueur n'est pas banni!");
                 return;
             }
 
             if (tarInfo.ban == 1)
             {
                 tarInfo.ban = 0;
-                client.SendNotification("Spieler wurde erfolgreich entbannt!");
+                client.SendNotification("Le joueur a été deban avec succès!");
                 tarInfo.Update();
             }
         }
@@ -291,21 +291,21 @@ namespace reallife.Commands
 
             if (!AdminSystem.HasRank(client, 2))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez pas l'autorisation!");
                 return;
             }
 
             if (p.username == null)
             {
-                client.SendNotification("Spieler existiert nicht!");
+                client.SendNotification("Le joueur n'existe pas!");
             }
 
             tarInfo.ban = 1;
             Database.Update(tarInfo);
             tarInfo.Update();
-            player.SendChatMessage("~r~Du wurdest gebannt!");
-            NAPI.Chat.SendChatMessageToAll($"[~r~SERVER~w~]Der Spieler {player.Name} wurde wegen: {grund}, ~r~gebannt!");
-            client.SendNotification($"Du hast den Spieler {player.Name} erfolgreich gebannt!");
+            player.SendChatMessage("~r~Vous avez été banni!");
+            NAPI.Chat.SendChatMessageToAll($"[~r~SERVER~w~]Le joueur {player.Name} à cause de: {grund}, ~r~ban");
+            client.SendNotification($"Vous avez ban le joueur { player.Name} avec succès!");
             Banlog = new BanLog();
             Banlog.banned = player.Name;
             Banlog.bannedby = client.Name;
@@ -326,7 +326,7 @@ namespace reallife.Commands
         {
             if (!AdminSystem.HasRank(client, 2))
             {
-                client.SendNotification("~r~Du bist dazu nicht befugt!");
+                client.SendNotification("~r~Vous n'êtes pas autorisé à le faire!");
                 return;
             }
 
@@ -338,7 +338,7 @@ namespace reallife.Commands
         {
             if (!AdminSystem.HasRank(client, 2))
             {
-                client.SendNotification("~r~Du bist dazu nicht befugt!");
+                client.SendNotification("~rVous n'êtes pas autorisé à le faire!");
                 return;
             }
 
@@ -350,7 +350,7 @@ namespace reallife.Commands
         {
             if (!AdminSystem.HasRank(client, 1))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez aucune autorisation!");
                 return;
             }
 
@@ -362,7 +362,7 @@ namespace reallife.Commands
         {
             if (!AdminSystem.HasRank(client, 1))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez aucune autorisation!");
                 return;
             }
 
@@ -375,7 +375,7 @@ namespace reallife.Commands
 
             if (!AdminSystem.HasRank(client, 1))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez aucune autorisation!");
                 return;
             }
 
@@ -387,7 +387,7 @@ namespace reallife.Commands
         {
             if (!AdminSystem.HasRank(client, 2))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez aucune autorisation!");
                 return;
             }
 
@@ -400,7 +400,7 @@ namespace reallife.Commands
 
             if (!AdminSystem.HasRank(client, 3))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez aucune autorisation!");
                 return;
             }
 
@@ -412,11 +412,11 @@ namespace reallife.Commands
         {
             if (!AdminSystem.HasRank(client, 1))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez aucune autorisation!");
                 return;
             }
 
-                NAPI.Chat.SendChatMessageToAll($"[~r~AC~w~] {client.Name} sagt: {message}");
+                NAPI.Chat.SendChatMessageToAll($"[~r~AC~w~] {client.Name} dit: {message}");
         }
 
         [Command("setmoney")]
@@ -430,12 +430,12 @@ namespace reallife.Commands
 
             if (!AdminSystem.HasRank(client, 2))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez aucune autorisation!");
                 return;
             }
 
-            client.SendNotification($"Du hast dem Spieler ~y~{player.Name}~w~ erfolgreich ~g~{amount}$~w~ gegeben!");
-            player.SendNotification($"Du hast ~g~{amount}$~w~ erhalten!");
+            client.SendNotification($"Vous avez donné à ~y~{player.Name}~w~  ~g~{amount}$~w~ $!");
+            player.SendNotification($"Vous avez obtenu ~g~{amount}$~w~ ");
 
             pInfo.AddMoney(amount);
 
@@ -448,7 +448,7 @@ namespace reallife.Commands
 
             if (!AdminSystem.HasRank(client, 1))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez aucune autorisation!");
                 return;
             }
 
@@ -478,7 +478,7 @@ namespace reallife.Commands
 
             if (!AdminSystem.HasRank(client, 2))
             {
-                client.SendNotification("~r~Du hast dazu keine Berechtigung!");
+                client.SendNotification("~r~Vous n'avez aucune autorisation!");
                 return;
             }
 

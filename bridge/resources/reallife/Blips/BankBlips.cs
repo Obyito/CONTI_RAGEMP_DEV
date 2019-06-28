@@ -33,26 +33,26 @@ namespace reallife.Blips
 
             //BANKTEXTE
             /*BANK1*/
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du dein Bankkonto beantragen\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(243.1547, 224.7177, 106.2868), 12, 1f, 4, new Color(255, 255, 255, 255));
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du deinen Pin von\ndeinem Bankkonto ändern\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(246.6217, 223.5182, 106.2867), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez demander votre compte bancairen\n==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(243.1547, 224.7177, 106.2868), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez changer votre PIN de \nvotre compte bancaire\n ==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(246.6217, 223.5182, 106.2867), 12, 1f, 4, new Color(255, 255, 255, 255));
             /*BANK2*/
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du dein Bankkonto beantragen\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(-1212.084, -330.4282, 37.78704), 12, 1f, 4, new Color(255, 255, 255, 255));
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du deinen Pin von\ndeinem Bankkonto ändern\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(-1214.762, -331.7896, 37.7907), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez demander votre compte bancairen\n==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(-1212.084, -330.4282, 37.78704), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez changer votre PIN de \nvotre compte bancaire\n ==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(-1214.762, -331.7896, 37.7907), 12, 1f, 4, new Color(255, 255, 255, 255));
             /*BANK3*/
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du dein Bankkonto beantragen\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(-350.551, -50.09611, 49.04259), 12, 1f, 4, new Color(255, 255, 255, 255));
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du deinen Pin von\ndeinem Bankkonto ändern\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(-352.7701, -49.25988, 49.04625), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez demander votre compte bancairen\n==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(-350.551, -50.09611, 49.04259), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez changer votre PIN de \nvotre compte bancaire\n ==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(-352.7701, -49.25988, 49.04625), 12, 1f, 4, new Color(255, 255, 255, 255));
             /*BANK4*/
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du dein Bankkonto beantragen\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(314.8576, -279.327, 54.17081), 12, 1f, 4, new Color(255, 255, 255, 255));
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du deinen Pin von\ndeinem Bankkonto ändern\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(312.1963, -278.3508, 54.17446), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez demander votre compte bancairen\n==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(314.8576, -279.327, 54.17081), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez changer votre PIN de \nvotre compte bancaire\n ==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(312.1963, -278.3508, 54.17446), 12, 1f, 4, new Color(255, 255, 255, 255));
             /*BANK5*/
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du dein Bankkonto beantragen\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(150.402, -1040.878, 29.3741), 12, 1f, 4, new Color(255, 255, 255, 255));
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du deinen Pin von\ndeinem Bankkonto ändern\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(148.3513, -1040.156, 29.37776), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez demander votre compte bancairen\n==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(150.402, -1040.878, 29.3741), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez changer votre PIN de \nvotre compte bancaire\n ==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(148.3513, -1040.156, 29.37776), 12, 1f, 4, new Color(255, 255, 255, 255));
             /*BANK6*/
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du dein Bankkonto beantragen\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(-2962.552, 483.3518, 15.70312), 12, 1f, 4, new Color(255, 255, 255, 255));
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du deinen Pin von\ndeinem Bankkonto ändern\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(-2962.656, 480.7722, 15.70677), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez demander votre compte bancairen\n==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(-2962.552, 483.3518, 15.70312), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez changer votre PIN de \nvotre compte bancaire\n ==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(-2962.656, 480.7722, 15.70677), 12, 1f, 4, new Color(255, 255, 255, 255));
             /*BANK7*/
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du dein Bankkonto beantragen\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(1174.971, 2706.805, 38.09408), 12, 1f, 4, new Color(255, 255, 255, 255));
-            NAPI.TextLabel.CreateTextLabel("Hier kannst du deinen Pin von\ndeinem Bankkonto ändern\n==>Zum öffnen nutze die taste ~g~E~w~<==", new Vector3(1176.94, 2706.805, 38.09771), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez demander votre compte bancairen\n==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(1174.971, 2706.805, 38.09408), 12, 1f, 4, new Color(255, 255, 255, 255));
+            NAPI.TextLabel.CreateTextLabel("Ici, vous pouvez changer votre PIN de \nvotre compte bancaire\n ==>Pour ouvrir, utilisez le bouton ~g~E~w~<==", new Vector3(1176.94, 2706.805, 38.09771), 12, 1f, 4, new Color(255, 255, 255, 255));
         }
     }
 }

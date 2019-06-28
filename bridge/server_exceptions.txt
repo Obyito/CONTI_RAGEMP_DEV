@@ -199,3 +199,13 @@ System.FormatException: Input string was not in a correct format.
 System.FormatException: Input string was not in a correct format.
    at void Number.StringToNumber(ReadOnlySpan<char> str, NumberStyles options, ref NumberBuffer number, NumberFormatInfo info, bool parseDecimal)
 =========================================================
+
+==================[28/06/2019 21:29:40]==================
+System.FormatException: Input string was not in a correct format.
+   at void Number.StringToNumber(ReadOnlySpan<char> str, NumberStyles options, ref NumberBuffer number, NumberFormatInfo info, bool parseDecimal)
+=========================================================
+
+==================[28/06/2019 21:29:59]==================
+System.FormatException: Input string was not in a correct format.
+   at void Number.StringToNumber(ReadOnlySpan<char> str, NumberStyles options, ref NumberBuffer number, NumberFormatInfo info, bool parseDecimal)
+=========================================================

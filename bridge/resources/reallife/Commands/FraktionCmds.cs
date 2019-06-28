@@ -18,7 +18,7 @@ namespace reallife.Commands
 
             if (client.HasData("FrakVehicle"))
             {
-                client.SendNotification("Du besitzt bereits ein Fraktions Fahrzeug!");
+                client.SendNotification("Vous possédez déjà un véhicule de faction!");
                 return;
             }
 
@@ -33,18 +33,18 @@ namespace reallife.Commands
                         NAPI.Vehicle.SetVehicleNumberPlate(veh, client.Name);
                         client.SetIntoVehicle(veh, -1);
 
-                        client.SendChatMessage("Nutze ~b~/lock~w~ zum aufschließen oder abschließen!");
+                        client.SendChatMessage("Utiliser ~b~/lock~w~ pour ourvrir et fermer!");
 
                         client.SetData("FrakVehicle", veh);
                         veh.SetData("ID", client_id);
                     }
                     else
                     {
-                        client.SendNotification("~r~Du musst dafür im Dienst sein!");
+                        client.SendNotification("~r~Vous devez être en service pour cela!");
                     }
                 } else
                 {
-                    client.SendNotification("Du gehörst nicht zu dieser Fraktion!");
+                    client.SendNotification("Vous n'appartenez pas à cette faction!");
                 }
             }
             else if (client.Position.DistanceTo2D(new Vector3(1193.662, -1487.571, 34.84266)) <= 5)
@@ -58,19 +58,19 @@ namespace reallife.Commands
                         NAPI.Vehicle.SetVehicleNumberPlate(veh, client.Name);
                         client.SetIntoVehicle(veh, -1);
 
-                        client.SendChatMessage("Nutze ~b~/lock~w~ zum aufschließen oder abschließen!");
+                        client.SendChatMessage("Utiliser ~b~/lock~w~ pour ourvrir et fermer!");
 
                         client.SetData("FrakVehicle", veh);
                         veh.SetData("ID", client_id);
                     }
                     else
                     {
-                        client.SendNotification("~r~Du musst dafür im Dienst sein!");
+                        client.SendNotification("~r~Vous devez etre en service pour cela!");
                     }
                 }
                 else
                 {
-                    client.SendNotification("Du gehörst nicht zu dieser Fraktion!");
+                    client.SendNotification("Vous n'appartenez pas à cette faction!");
                 }
             }
             else if (client.Position.DistanceTo2D(new Vector3(1191.315, -1474.554, 34.85954)) <= 5)
@@ -84,14 +84,14 @@ namespace reallife.Commands
                         NAPI.Vehicle.SetVehicleNumberPlate(veh, client.Name);
                         client.SetIntoVehicle(veh, -1);
 
-                        client.SendChatMessage("Nutze ~b~/lock~w~ zum aufschließen oder abschließen!");
+                        client.SendChatMessage("Utiliser ~b~/lock~w~ pour ourvrir et fermer!");
 
                         client.SetData("FrakVehicle", veh);
                         veh.SetData("ID", client_id);
                     }
                     else
                     {
-                        client.SendNotification("~r~Du musst dafür im Dienst sein!");
+                        client.SendNotification("~r~Vous devez etre en service pour cela!");
                     }
                 }
                 else
@@ -108,18 +108,18 @@ namespace reallife.Commands
                     NAPI.Vehicle.SetVehicleNumberPlate(veh, client.Name);
                     client.SetIntoVehicle(veh, -1);
 
-                    client.SendChatMessage("Nutze ~b~/lock~w~ zum aufschließen oder abschließen!");
+                    client.SendChatMessage("Utiliser ~b~/lock~w~ pour ourvrir et fermer!");
 
                     client.SetData("FrakVehicle", veh);
                     veh.SetData("ID", client_id);
                 }
                 else
                 {
-                    client.SendNotification("Du gehörst nicht zu dieser Fraktion!");
+                    client.SendNotification("Vous n'appartenez pas à cette faction!");
                 }
             } else
             {
-                client.SendNotification("Du bist nicht in der Nähe von einer Position wo du /fcar benutzen kannst!");
+                client.SendNotification("Vous n'êtes pas près d'un endroit où vous pouvez utiliser / fcar!");
             }
         }
         //FCAR ENDE
@@ -131,7 +131,7 @@ namespace reallife.Commands
 
             if (playerInfo.wantedlevel > 0)
             {
-                client.SendNotification("~r~Du kannst nicht in den Dienst gehen wenn du gesucht wirst!");
+                client.SendNotification("~r~Vous ne pouvez pas etre en service si vous êtes recherché!");
                 return;
             }
 
@@ -150,7 +150,7 @@ namespace reallife.Commands
                 }
                 else
                 {
-                    client.SendNotification("~r~Du gehörst nicht zur LSPD!");
+                    client.SendNotification("~r~Vous n'appartenez pas à la LSPD!");
                 }
             }
             else if (client.Position.DistanceTo2D(new Vector3(1207.794, -1487.555, 34.84264)) <= 0.8)
@@ -168,12 +168,12 @@ namespace reallife.Commands
                 }
                 else
                 {
-                    client.SendNotification("~r~Du gehörst nicht zur SARU!");
+                    client.SendNotification("~r~Vous n'appartenez pas à la SARU!");
                 }
             }
             else
             {
-                client.SendNotification("Du bist nicht in der nähe von einem duty!");
+                client.SendNotification("Vous n'êtes pas près d'un devoir!");
             }
         }
     }
